@@ -191,7 +191,7 @@ span{
 
 .services-area{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   align-items: center;
   gap: 2.3rem;
   margin-top: 3rem;
@@ -224,4 +224,45 @@ span{
   border: 1px solid var(--main-color);
   transform: translateY(-5px) scale(1.04);
   cursor: pointer;
+}
+
+/* About */
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-img img{
+  width: 45vw;
+  border: 2px solid var(--text-color);
+  border-radius: 1rem;
+  transition: 0.5s ease;
+}
+
+
+.about-img img:hover{
+  transform: scale(1.02);
+  border: 2px solid var(--main-color);
+}
+
+.about-area .heading{
+  text-align: center;
+  font-size: 5rem;
+}
+
+.about-area{
+  padding: 0 3rem;
+}
+
+.about-area h2{
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-area p{
+  font-size: 1.6rem;
+  margin: 2rem 0 2rem;
 }
