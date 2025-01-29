@@ -408,7 +408,7 @@ span{
 }
 
 /* contact */
- /* -------------------------------------------  */
+ 
 .contact{
   background: var(--snd-bg-color);
 }
@@ -431,6 +431,7 @@ span{
   height: 300px;
   border-radius: 10px;
   border: 3px solid var(--main-color);
+  cursor: pointer;
 }
 
 .contact .wrapper{
@@ -455,6 +456,7 @@ span{
 .contact-info div{
   padding: 6px;
   margin-top: 3px;
+  cursor: pointer;
 }
 
 .contact-info p{
@@ -462,6 +464,137 @@ span{
 }
 
  /* ------------------------------------------------ */
+/* contact form */
+.contact-form {
+  background: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-form .heading {
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+}
+
+.contact-form p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.input-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 2rem;
+}
+
+.input-group label {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border: 3px solid var(--main-color);
+  border-radius: 5px;
+  background-color: rgb(237, 236, 236);
+  color: black;
+  font-size: 16px;
+}
+
+.message-box {
+  width: 80rem;
+  margin: 0 auto 20px;
+  display: flex;
+}
+
+.message-box textarea {
+  width: 100%;
+  height: 150px;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 12px;
+  border: 3px solid var(--main-color);
+  border-radius: 5px;
+  background-color: rgb(237, 236, 236);
+  color: black;
+  font-size: 16px;
+  resize: none;
+}
+
+.send-btn {
+  display: inline-block;
+  padding: 1rem;
+  background: transparent;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.send-btn:hover {
+  background: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 0 0 18px var(--main-color);
+}
+
+
+@media (max-width: 768px) {
+  .contact-form .heading {
+    font-size: 3rem;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-group {
+    margin: 1rem 0;
+  }
+
+  .input-group input,
+  .message-box textarea {
+    max-width: 100%;
+  }
+
+  .send-btn {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form .heading {
+    font-size: 2.5rem;
+  }
+
+  .input-group input,
+  .message-box textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .send-btn {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+}
 
  /* footer */ 
 .footer{
