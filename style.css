@@ -667,7 +667,7 @@ span{
     top: 100%;
     right: -100%;
     width: 255px;
-    min-width: 100vh;
+    min-width: 50vw;
     display: flex;
     flex-direction: column;
     background:var(--bg-color);
