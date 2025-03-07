@@ -11,11 +11,6 @@ window.onscroll = () =>{
   navbar.classList.remove('active');
 }
 
-// change home text
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-// });
 
   let type = new TypeIt(".multiple-text", {
     strings: ["Physical Fitness","Weight Gain","Strength Training","Weight Loss","Bodybuilding"],
